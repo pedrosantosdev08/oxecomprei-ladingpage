@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@theme {
+  
+  --color-orange-highlight: #FE7800;
+  --color-orange: #FBA100;
+}
