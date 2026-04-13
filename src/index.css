@@ -2,7 +2,17 @@
 @config "../tailwind.config.ts";
 
 @theme {
-  
   --color-orange-highlight: #FE7800;
   --color-orange: #FBA100;
+}
+
+/* Aplicando ao nível global */
+@layer base {
+  html {
+    @apply overflow-x-hidden scroll-smooth;
+    
+    /* Ou usando CSS puro, se preferir: */
+    /* overflow-x: hidden; */
+    /* scroll-behavior: smooth; */
+  }
 }
