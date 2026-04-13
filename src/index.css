@@ -11,8 +11,6 @@
   html {
     @apply overflow-x-hidden scroll-smooth;
     
-    /* Ou usando CSS puro, se preferir: */
-    /* overflow-x: hidden; */
-    /* scroll-behavior: smooth; */
+   
   }
 }
