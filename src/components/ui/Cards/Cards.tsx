@@ -21,3 +21,21 @@ export function AboutCard({ title, description, icon }: CardProps) {
     </li>
   );
 }
+
+export function ForRetailersCard({ title, description, icon }: CardProps) {
+  return (
+    <li className="flex flex-col items-start bg-white h-full rounded-3xl p-8 text-start gap-4 border border-[#FEF7E6] shadow-sm hover:shadow-xl transition-all duration-300 hover:border-orange-300 ">
+      {/* Container do Ícone */}
+      <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-orange-200 mb-2 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform">
+        <FontAwesomeIcon
+          className="text-2xl text-orange-highlight"
+          icon={icon}
+        />
+      </div>
+
+      <h3 className="font-bold text-2xl text-gray-900">{title}</h3>
+
+      <p className="text-gray-500 leading-relaxed">{description}</p>
+    </li>
+  );
+}
